@@ -14,7 +14,7 @@ node_js:
   - '5'
   - '4'
 before_script:
-  - npm install -g bower web-components-tester
+  - npm install -g bower web-component-tester
   - bower install
 script:
   - xvfb-run wct
