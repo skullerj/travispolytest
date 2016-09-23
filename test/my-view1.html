@@ -37,9 +37,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           home = fixture('basic');
         });
 
-        test('Number in circle should be 1', function() {
-          var circle = Polymer.dom(home.root).querySelector('.circle');
-          assert.equal(circle.textContent, '2');
+        test('This should be my-view1', function() {
+          assert.equal(home.is, 'foo-element');
         })
       });
     </script>
