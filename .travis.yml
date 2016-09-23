@@ -1,6 +1,7 @@
 language: node_js
 sudo: required
 dist: trusty
+fail_fast: true
 addons:
   firefox: '46.0'
   apt:
@@ -16,4 +17,4 @@ before_script:
   - npm install -g bower polymer-cli
   - bower install
 script:
-  - polymer test
+  - xvfb-run polymer test
